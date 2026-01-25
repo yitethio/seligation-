@@ -6,10 +6,14 @@
 
 :root {
   /* Brand Colors */
-  --color-mocha: 18 26% 52%;      /* #A47764 */
-  --color-bone: 210 20% 98%;      /* #F8F9FA */
-  --color-cream: 32 43% 92%;      /* #F5EBE0 */
-  --color-charcoal: 222 15% 13%;  /* #1C1E21 - Contrast text */
+  --color-mocha: 18 26% 52%;
+  /* #A47764 */
+  --color-bone: 210 20% 98%;
+  /* #F8F9FA */
+  --color-cream: 32 43% 92%;
+  /* #F5EBE0 */
+  --color-charcoal: 222 15% 13%;
+  /* #1C1E21 - Contrast text */
 
   /* Tailwind Base mappings */
   --background: var(--color-bone);
@@ -33,7 +37,7 @@
   --border: 220 13% 91%;
   --input: 220 13% 91%;
   --ring: var(--color-mocha);
-  
+
   --radius: 0.5rem;
 
   --font-sans: 'DM Sans', sans-serif;
@@ -44,12 +48,18 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground antialiased font-sans selection:bg-primary/20;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-display tracking-tight;
   }
 
@@ -62,9 +72,11 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   @apply bg-primary/20 rounded-full hover:bg-primary/40 transition-colors;
 }

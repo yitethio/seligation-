@@ -33,15 +33,15 @@ export default function Home() {
               <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-lg leading-relaxed font-light">
                 Our mission is to bridge the gap between high-level strategy and daily execution.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button onClick={scrollToContact} size="lg" variant="premium" className="text-lg px-8 h-14">
                   Get Started
                 </Button>
-                <Button 
-                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })} 
-                  variant="outline" 
-                  size="lg" 
+                <Button
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                  variant="outline"
+                  size="lg"
                   className="text-lg px-8 h-14 border-primary/20 hover:bg-secondary"
                 >
                   Explore Services
@@ -59,14 +59,14 @@ export default function Home() {
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl relative bg-secondary/20 backdrop-blur-sm border border-white/50 p-8 flex items-center justify-center">
                 {/* Decorative Pattern */}
                 <div className="grid grid-cols-2 gap-4 w-full h-full opacity-60">
-                   <div className="bg-primary/10 rounded-2xl w-full h-full" />
-                   <div className="bg-primary/20 rounded-2xl w-full h-[80%] mt-auto" />
-                   <div className="bg-primary/30 rounded-2xl w-full h-[80%]" />
-                   <div className="bg-primary/10 rounded-2xl w-full h-full" />
+                  <div className="bg-primary/10 rounded-2xl w-full h-full" />
+                  <div className="bg-primary/20 rounded-2xl w-full h-[80%] mt-auto" />
+                  <div className="bg-primary/30 rounded-2xl w-full h-[80%]" />
+                  <div className="bg-primary/10 rounded-2xl w-full h-full" />
                 </div>
-                
+
                 {/* Floating Card */}
-                <motion.div 
+                <motion.div
                   animate={{ y: [0, -10, 0] }}
                   transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
                   className="absolute bg-white p-6 rounded-2xl shadow-xl max-w-xs border border-border/50"
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
@@ -97,7 +97,7 @@ export default function Home() {
       <section id="about" className="py-24 bg-secondary/30">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -105,7 +105,7 @@ export default function Home() {
             >
               Why Seligation?
             </motion.h2>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -131,7 +131,7 @@ export default function Home() {
               <p className="text-lg text-muted-foreground mb-10 max-w-md">
                 Whether you need a dedicated virtual assistant, a high-performance SDR team, or strategic cold calling—we're here to help you scale.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-center gap-4 p-4 bg-secondary/20 rounded-lg border border-secondary">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
@@ -167,13 +167,13 @@ export default function Home() {
                 Bridging the gap between strategy and execution. Your partner in sustainable, accurate growth.
               </p>
             </div>
-            
+
             <div>
               <h4 className="font-bold mb-4 text-primary">Navigation</h4>
               <ul className="space-y-3 text-white/60">
-                <li><button onClick={() => document.getElementById("services")?.scrollIntoView({behavior: "smooth"})} className="hover:text-white transition-colors">Services</button></li>
-                <li><button onClick={() => document.getElementById("about")?.scrollIntoView({behavior: "smooth"})} className="hover:text-white transition-colors">About</button></li>
-                <li><button onClick={() => document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})} className="hover:text-white transition-colors">Contact</button></li>
+                <li><button onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })} className="hover:text-white transition-colors">Services</button></li>
+                <li><button onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })} className="hover:text-white transition-colors">About</button></li>
+                <li><button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="hover:text-white transition-colors">Contact</button></li>
               </ul>
             </div>
 
