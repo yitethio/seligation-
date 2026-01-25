@@ -151,10 +151,10 @@ export default function Home() {
       </section>
 
       {/* UNIQUE FOOTER */}
-      <footer className="bg-foreground text-background py-16 px-4 md:px-6 relative overflow-hidden">
+      <footer className="bg-foreground text-background py-16 px-5 md:px-6 relative overflow-hidden">
         {/* Large Typography Element */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-[0.03]">
-          <span className="text-[20vw] font-display font-bold leading-none select-none whitespace-nowrap absolute -bottom-[5vw] left-0">
+          <span className="text-[17vw] font-display font-bold leading-none select-none whitespace-nowrap absolute -bottom-[5vw] left-0">
             SELIGATION
           </span>
         </div>
@@ -181,8 +181,8 @@ export default function Home() {
               <h4 className="font-bold mb-4 text-primary">Connect</h4>
               <ul className="space-y-3 text-white/60">
                 <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
-                <li><a href="mailto:hello@seligation.com" className="hover:text-white transition-colors">hello@seligation.com</a></li>
+                <li><a href="https://www.instagram.com/seligation?igsh=eXdxOG1uZDB2d2Vz" className="hover:text-white transition-colors">Instagram</a></li>
+                <li><a href="mailto:Seligation@gmail.com" className="hover:text-white transition-colors">Seligation@gmail.com</a></li>
               </ul>
             </div>
           </div>
