@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { setupApp, log } from "./app";
 
 (async () => {
