@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { setupApp, log } from "./app";
+import { setupApp, log } from "./app.js";
 
 (async () => {
   const { httpServer } = await setupApp();
