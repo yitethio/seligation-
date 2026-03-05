@@ -182,7 +182,6 @@ export default function Home() {
               <ul className="space-y-3 text-white/60">
                 <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
                 <li><a href="https://www.instagram.com/seligation?igsh=eXdxOG1uZDB2d2Vz" className="hover:text-white transition-colors">Instagram</a></li>
-                <li><a href="mailto:Seligation@gmail.com" className="hover:text-white transition-colors">Seligation@gmail.com</a></li>
               </ul>
             </div>
           </div>

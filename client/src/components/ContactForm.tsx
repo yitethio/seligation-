@@ -38,7 +38,7 @@ export function ContactForm() {
   return (
     <div className="bg-background rounded-2xl p-8 md:p-12 shadow-xl border border-border/50">
       <h3 className="text-2xl font-display font-bold mb-6">Send us a message</h3>
-      
+
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <FormField
@@ -77,11 +77,11 @@ export function ContactForm() {
                 <FormLabel>Interested Service (Optional)</FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value || undefined}>
                   <FormControl>
-                    <SelectTrigger className="bg-white/50">
+                    <SelectTrigger className="bg-white">
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
                   </FormControl>
-                  <SelectContent>
+                  <SelectContent className="bg-white">
                     <SelectItem value="cold-calling">Cold Calling</SelectItem>
                     <SelectItem value="virtual-assistance">Virtual Assistance</SelectItem>
                     <SelectItem value="sdr-services">SDR Services</SelectItem>
@@ -100,10 +100,10 @@ export function ContactForm() {
               <FormItem>
                 <FormLabel>Message</FormLabel>
                 <FormControl>
-                  <Textarea 
-                    placeholder="Tell us about your needs..." 
-                    className="min-h-[120px] bg-white/50 resize-none" 
-                    {...field} 
+                  <Textarea
+                    placeholder="Tell us about your needs..."
+                    className="min-h-[120px] bg-white/50 resize-none"
+                    {...field}
                   />
                 </FormControl>
                 <FormMessage />
@@ -111,9 +111,9 @@ export function ContactForm() {
             )}
           />
 
-          <Button 
-            type="submit" 
-            className="w-full" 
+          <Button
+            type="submit"
+            className="w-full"
             size="lg"
             disabled={mutation.isPending}
           >

@@ -19,6 +19,12 @@
   --background: var(--color-bone);
   --foreground: var(--color-charcoal);
 
+  --card: var(--color-bone);
+  --card-foreground: var(--color-charcoal);
+
+  --popover: var(--color-bone);
+  --popover-foreground: var(--color-charcoal);
+
   --primary: var(--color-mocha);
   --primary-foreground: 0 0% 100%;
 
