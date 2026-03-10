@@ -38,14 +38,14 @@ export default function Home() {
                 <Button onClick={scrollToContact} size="lg" variant="premium" className="text-lg px-8 h-14">
                   Get Started
                 </Button>
-                <Button
+                {/* <Button
                   onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                   variant="outline"
                   size="lg"
                   className="text-lg px-8 h-14 border-primary/20 hover:bg-secondary"
                 >
                   Explore Services
-                </Button>
+                </Button> */}
               </div>
             </motion.div>
 
@@ -58,11 +58,24 @@ export default function Home() {
             >
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl relative bg-secondary/20 backdrop-blur-sm border border-white/50 p-8 flex items-center justify-center">
                 {/* Decorative Pattern */}
-                <div className="grid grid-cols-2 gap-4 w-full h-full opacity-60">
-                  <div className="bg-primary/10 rounded-2xl w-full h-full" />
-                  <div className="bg-primary/20 rounded-2xl w-full h-[80%] mt-auto" />
-                  <div className="bg-primary/30 rounded-2xl w-full h-[80%]" />
-                  <div className="bg-primary/10 rounded-2xl w-full h-full" />
+                <div className="grid grid-cols-2 gap-4 w-full h-full opacity-90 transition-all duration-500">
+                  {/* To add images, place files in the 'public' folder (e.g., 'public/hero-1.jpg') and update these URLs */}
+                  <div
+                    className="bg-primary/20 rounded-2xl w-full h-full bg-cover bg-center bg-blend-overlay"
+                    style={{ backgroundImage: "url('/hero-1.jpg')" }}
+                  />
+                  <div
+                    className="bg-primary/30 rounded-2xl w-full h-[80%] mt-auto bg-cover bg-center bg-blend-overlay"
+                    style={{ backgroundImage: "url('/hero-2.jpg')" }}
+                  />
+                  <div
+                    className="bg-primary/40 rounded-2xl w-full h-[80%] bg-cover bg-center bg-blend-overlay"
+                    style={{ backgroundImage: "url('/hero-3.jpg')" }}
+                  />
+                  <div
+                    className="bg-primary/20 rounded-2xl w-full h-full bg-cover bg-center bg-blend-overlay"
+                    style={{ backgroundImage: "url('/hero-4.jpg')" }}
+                  />
                 </div>
 
                 {/* Floating Card */}
@@ -133,7 +146,7 @@ export default function Home() {
               </p>
 
               <div className="space-y-6">
-                <div className="flex items-center gap-4 p-4 bg-secondary/20 rounded-lg border border-secondary">
+                {/* <div className="flex items-center gap-4 p-4 bg-secondary/20 rounded-lg border border-secondary">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                     <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
                   </div>
@@ -141,7 +154,7 @@ export default function Home() {
                     <h4 className="font-bold">Accepting New Clients</h4>
                     <p className="text-sm text-muted-foreground">Slots available for Q4 2024</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
