@@ -48,14 +48,23 @@ export function LazyHeroImage({ src, className, style }: LazyHeroImageProps) {
         <div
             ref={containerRef}
             className={cn(
-                "bg-cover bg-center bg-blend-overlay transition-opacity duration-1000",
-                isLoaded ? "opacity-100" : "opacity-0",
+                "relative overflow-hidden bg-cover bg-center bg-blend-overlay transition-opacity duration-1000",
                 className
             )}
             style={{
                 ...style,
                 backgroundImage: isLoaded ? `url('${src}')` : "none",
             }}
-        />
+        >
+            {/* Skeleton / Shimmer Overlay */}
+            {!isLoaded && isInView && (
+                <div className="absolute inset-0 animate-shimmer" />
+            )}
+
+            {/* Placeholder color while waiting for scroll */}
+            {!isInView && (
+                <div className="absolute inset-0 bg-primary/5" />
+            )}
+        </div>
     );
 }

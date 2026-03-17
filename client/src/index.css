@@ -86,3 +86,22 @@
 ::-webkit-scrollbar-thumb {
   @apply bg-primary/20 rounded-full hover:bg-primary/40 transition-colors;
 }
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg,
+      rgba(var(--color-mocha), 0.05) 0%,
+      rgba(var(--color-mocha), 0.1) 50%,
+      rgba(var(--color-mocha), 0.05) 100%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+}

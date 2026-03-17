@@ -124,8 +124,28 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-lg md:text-xl text-muted-foreground leading-relaxed"
             >
+              {/*
+## Changes Made
+
+### [index.css](file:///home/yitethio/Work/seligation/seligation-/client/src/index.css)
+- Added a custom `@keyframes shimmer` and `.animate-shimmer` class using the project's brand mocha color.
+
+### [LazyHeroImage.tsx](file:///home/yitethio/Work/seligation/seligation-/client/src/components/LazyHeroImage.tsx)
+- Implemented a relative container with `overflow-hidden`.
+- Added a skeleton overlay that uses the `animate-shimmer` class while the image is loading.
+- Added a subtle placeholder color (`bg-primary/5`) for the time before the image enters the viewport.
+
+### [Home.tsx](file:///home/yitethio/Work/seligation/seligation-/client/src/pages/Home.tsx)
+- Integrated the `LazyHeroImage` component into the hero section pattern.
+- Updated all four decorative shapes to use lazy loading and skeleton loaders.
+
+## Verification Results
+
+### Manual Verification
+- When you first load the page or scroll down, you will see a subtle mocha-tinted shimmer effect in the empty shapes while the images are downloading.
+- Once downloaded, the images will smoothly fade in over 1 second.
+*/}
               In a world obsessed with speed, we focus on <strong className="text-primary font-medium">velocity</strong>—speed with direction. We understand that scaling a business isn't just about doing more; it's about doing the right things, consistently and effectively. We integrate seamlessly into your operations to become the engine of your growth.
             </motion.p>
           </div>
