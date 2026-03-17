@@ -4,6 +4,7 @@ import { Services } from "@/components/Services";
 import { ContactForm } from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import { LazyHeroImage } from "@/components/LazyHeroImage";
 
 export default function Home() {
   const scrollToContact = () => {
@@ -60,21 +61,21 @@ export default function Home() {
                 {/* Decorative Pattern */}
                 <div className="grid grid-cols-2 gap-4 w-full h-full opacity-90 transition-all duration-500">
                   {/* To add images, place files in the 'public' folder (e.g., 'public/hero-1.jpg') and update these URLs */}
-                  <div
-                    className="bg-primary/20 rounded-2xl w-full h-full bg-cover bg-center bg-blend-overlay"
-                    style={{ backgroundImage: "url('/hero-1.jpg')" }}
+                  <LazyHeroImage
+                    src="/hero-1.jpg"
+                    className="bg-primary/20 rounded-2xl w-full h-full"
                   />
-                  <div
-                    className="bg-primary/30 rounded-2xl w-full h-[80%] mt-auto bg-cover bg-center bg-blend-overlay"
-                    style={{ backgroundImage: "url('/hero-2.jpg')" }}
+                  <LazyHeroImage
+                    src="/hero-2.jpg"
+                    className="bg-primary/30 rounded-2xl w-full h-[80%] mt-auto"
                   />
-                  <div
-                    className="bg-primary/40 rounded-2xl w-full h-[80%] bg-cover bg-center bg-blend-overlay"
-                    style={{ backgroundImage: "url('/hero-3.jpg')" }}
+                  <LazyHeroImage
+                    src="/hero-3.jpg"
+                    className="bg-primary/40 rounded-2xl w-full h-[80%]"
                   />
-                  <div
-                    className="bg-primary/20 rounded-2xl w-full h-full bg-cover bg-center bg-blend-overlay"
-                    style={{ backgroundImage: "url('/hero-4.jpg')" }}
+                  <LazyHeroImage
+                    src="/hero-4.jpg"
+                    className="bg-primary/20 rounded-2xl w-full h-full"
                   />
                 </div>
 
