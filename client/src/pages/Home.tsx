@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Navigation } from "@/components/Navigation";
 import { Services } from "@/components/Services";
 import { ContactForm } from "@/components/ContactForm";
+import { BookingSection } from "@/components/BookingSection";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { LazyHeroImage } from "@/components/LazyHeroImage";
@@ -151,6 +152,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <BookingSection />
 
       {/* CONTACT SECTION */}
       <section id="contact" className="py-24 md:py-32 px-4 md:px-6 relative">
